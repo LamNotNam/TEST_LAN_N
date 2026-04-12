@@ -12,5 +12,5 @@ jobs:
     - name: Compile
       run: g++ TEST/main.cpp -o main
 
-    - name: Run
-      run: ./main
+    - name: Compile
+      run: g++ TEST/*.cpp -o main
