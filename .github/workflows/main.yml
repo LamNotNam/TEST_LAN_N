@@ -1,0 +1,16 @@
+name: Run Code
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Compile
+      run: g++ TEST/main.cpp -o main
+
+    - name: Run
+      run: ./main
