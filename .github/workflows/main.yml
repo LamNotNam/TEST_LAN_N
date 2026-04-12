@@ -9,5 +9,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Show files
+      run: ls -R
+
     - name: Compile
       run: g++ TEST/*.cpp -o main
+
+    - name: Run
+      run: ./main
